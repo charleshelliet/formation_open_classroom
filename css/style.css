@@ -1,0 +1,377 @@
+/* CV en entier */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+main
+{
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Nunito', Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+body
+{
+    margin: 0em;
+}
+
+
+/* Titres */
+
+h1, h3, h4
+{
+    text-transform: uppercase; 
+}
+
+
+                                                                 /* Bloc de droite */
+
+#right_block
+{
+    background-color: #F5F5F5;
+    width: 72%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+}
+
+/* Charles Helliet */
+
+h1
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+strong
+{
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+h2
+{
+    text-align: center;
+}
+
+#reco em
+{
+    text-decoration: underline;
+    text-decoration-color: #4CAF50;
+    font-style: normal;
+}
+
+H2 em
+{
+    border-bottom: solid;
+    border-bottom-color: #4CAF50;
+    font-style: normal;
+}
+
+/* Titre de droite */
+
+#right_block h3
+{
+    font-size: 30px;
+    border-bottom: solid;
+    border-bottom-color: #4CAF50;
+}
+
+#right_block i
+{
+    padding-right: 30px;
+}
+
+/* images */
+
+.fa-university, .fa-briefcase, .fa-network-wired
+{
+    color: #4CAF50;
+    font-size: 40px;
+}
+
+.fa-toggle-on, .fa-toggle-off
+{
+    font-size: 30px;
+}
+
+/* contenus partie droite */
+
+#right_block li
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#right_block .date
+{
+    width: 30%;
+}
+
+#right_block .formation_text
+{
+    width: 70%;
+}
+
+
+#formation, #exp
+{
+    display: flex;
+    flex-direction: row; 
+}
+
+#right_block, .paris, .sydney, .elamp, .riseup, .monkeytie
+{
+    padding-right: 150px;
+}
+
+#right_block #reco
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#right_block h4
+{
+    font-size: 20px;
+    margin: 0;
+}
+
+#right_block h5
+{
+    font-size: 15px;
+}
+
+                                                                /* Bloc de gauche */
+
+#left_block
+{
+    background-color: #0D47A1;
+    width: 28%;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#left_block h3
+{
+    background-color: #4CAF50;
+    color: black;
+    padding: none;
+    text-align: center;
+}
+
+#section_loisirs
+{
+    margin-top: auto;
+}
+
+#left_block p
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#left_block ul 
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Titres de gauche */
+
+h3
+{
+    font-size: 25px;
+}
+
+#left_block h5
+{
+    font-size: 20px;
+    padding: 35px;
+}
+
+/* Photo */
+
+
+#photo_cv img
+{
+    width:200px;
+    height: 200px;
+    border: 15px #0b140c38 solid;
+    border-radius: 50%;
+    margin: 25%;
+    margin-top: 10%;
+    margin-bottom: 0em;
+}
+
+/* liens contact */
+
+a 
+{   
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #4CAF50;
+    text-decoration: blink ;
+}
+
+/* Images gauche */
+
+#left_block .fas
+{
+    font-size: 60px;
+    border: 3px white solid;
+    border-radius: 50px;
+    padding: 6px;
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+
+#loisirs
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+                                                                /* Responsive */
+
+/* Petit écran */
+
+@media all and (max-device-width: 1024px)
+{
+
+    #left_block #photo_cv
+    {
+        text-align: center;
+    }
+    
+    #photo_cv img
+    {   
+    width:50%;
+    height: auto;
+    border: 15px #0b140c38 solid;
+    border-radius: 50%;
+    margin: 25%;
+    margin-top: 10%;
+    margin-bottom: 0em;
+    }   
+
+    #left_block .fas
+    {
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+/* Tablette */
+
+@media all and (max-device-width: 768px)
+{
+    main 
+    {
+        flex-direction: column;
+    }
+
+    #left_block
+    {
+        width: 100%;
+    }
+
+    #left_block .fas
+    {
+        font-size: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #loisirs
+    {
+        padding-left: 20px;
+    }
+
+    #right_block
+    {
+        padding-top: 40px;
+    }
+
+    #photo_cv img
+    {
+        width:200px;
+        height: auto;
+        border: 15px #0b140c38 solid;
+        border-radius: 50%;
+        margin: 25%;
+        margin-top: 30px;
+        margin-bottom: 0em;
+    }
+
+    #reco
+    {
+        margin-bottom: 20px;
+    }    
+}
+
+/* Mobile */
+
+@media all and (max-device-width: 425px)
+{
+    #right_block
+    {
+        width: 90%;
+        padding: 5%;
+    }
+
+    #right_block .formation_text 
+    {
+        width: 90%;
+    }
+
+    #right_block #reco
+    {
+        display: flex;
+        flex-direction: column ;
+    }
+
+    #right_block li
+    {
+        flex-direction: column-reverse;
+        border-bottom: solid;
+        border-bottom-color: grey;
+        padding-top: 20px; 
+    }
+
+    #right_block li i
+    {
+        display: none;
+    }
+
+    #right_block h5
+    {
+        font-size: small;
+    }
+
+    #left_block
+    {
+        width: 80%;
+        padding: 10%;
+        padding-top: inherit;
+    }
+
+    #photo_cv img
+    {
+        margin: 10%;
+    }
+}
