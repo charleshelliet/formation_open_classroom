@@ -16,7 +16,7 @@ CSS3
 
 ## Setup
 
-To see this project, just open the link https://charleshelliet.github.io/formation_open_classroom/ on any web browser.
+To see this project, just open the link https://charleshelliet.github.io/formation_open_classroom/ on any web browser (Desktop, Mobile).
 
 ## Files
 
